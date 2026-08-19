@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Frutales del Norte | Frutas y verduras frescas</title>
+
+  <meta name="description"
+    content="Frutales del Norte: frutas, verduras, bolsones y productos saludables. Pedí online y recibí tu pedido en casa.">
+
+  <meta name="theme-color" content="#F0762A">
+
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍊</text></svg>">
+
+  <!-- FUENTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Karla:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- ICONOS -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="header" id="header">
+
+    <div class="container header__inner">
+
+      <a href="#inicio" class="logo">
+
+       <svg class="logo__mark" viewBox="0 0 40 40" width="34" height="34" aria-hidden="true">
+  <circle cx="20" cy="20" r="18" fill="#F0762A"/>
+  <g stroke="#FCE4D0" stroke-width="1.6" stroke-linecap="round">
+    <line x1="20" y1="20" x2="20" y2="5"/>
+    <line x1="20" y1="20" x2="33" y2="12.5"/>
+    <line x1="20" y1="20" x2="33" y2="27.5"/>
+    <line x1="20" y1="20" x2="20" y2="35"/>
+    <line x1="20" y1="20" x2="7" y2="27.5"/>
+    <line x1="20" y1="20" x2="7" y2="12.5"/>
+  </g>
+  <circle cx="20" cy="20" r="4" fill="#FCE4D0"/>
+</svg>
+
+        <span class="logo__text">
+          Frutales
+          <span>del Norte</span>
+        </span>
+
+      </a>
+
+      <nav class="nav" id="mainNav">
+
+        <ul class="nav__list">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#bolsones">Bolsones</a></li>
+          <li><a href="#reparto">Reparto</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+        <button class="btn btn--primary nav__cta" id="openCartNav">
+          <i class="fa-solid fa-cart-shopping"></i>
+          Carrito
+          <span class="cart-count">0</span>
+        </button>
+
+      </nav>
+
+      <div class="header__actions">
+
+        <button class="btn btn--primary btn--sm" id="openCart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-count">0</span>
+        </button>
+
+        <button
+          class="nav__toggle"
+          id="navToggle"
+          aria-label="Abrir menú">
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- ================= HERO ================= -->
+
+  <main>
+
+    <section class="hero" id="inicio">
+
+      <div class="container hero__inner">
+
+        <div class="hero__content">
+
+          <span class="eyebrow">
+            Del campo a tu puerta
+          </span>
+
+          <h1 class="hero__title">
+            Fruta y verdura fresca,
+            <span>directo a tu mesa</span>
+          </h1>
+
+          <p class="hero__subtitle">
+            Elegimos productos frescos y de calidad para que recibas
+            lo mejor directamente en tu casa.
+          </p>
+
+          <div class="hero__actions">
+
+            <a href="#productos" class="btn btn--primary">
+              Ver productos
+            </a>
+
+            <button class="btn btn--outline" id="openCartHero">
+              Ver mi carrito
+            </button>
+
+          </div>
+
+          <div class="hero__badges">
+
+            <span class="badge">
+              <i class="fa-solid fa-truck"></i>
+              Reparto a domicilio
+            </span>
+
+            <span class="badge">
+              <i class="fa-solid fa-leaf"></i>
+              Productos frescos
+            </span>
+
+            <span class="badge">
+              <i class="fa-brands fa-whatsapp"></i>
+              Pedidos por WhatsApp
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="hero__visual">
+
+          <div class="hero-fruit hero-fruit--1">🍊</div>
+          <div class="hero-fruit hero-fruit--2">🥕</div>
+          <div class="hero-fruit hero-fruit--3">🍎</div>
+          <div class="hero-fruit hero-fruit--4">🥬</div>
+
+          <div class="hero__circle">
+            <span>Fresco</span>
+            <strong>+</strong>
+            <span>Natural</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= BENEFICIOS ================= -->
+
+    <section class="features">
+
+      <div class="container features__grid">
+
+        <div class="feature-card">
+          <div class="feature-card__icon feature-card__icon--orange">
+            <i class="fa-solid fa-seedling"></i>
+          </div>
+
+          <h3>Frescura</h3>
+
+          <p>
+            Seleccionamos nuestros productos priorizando su calidad.
+          </p>
+        </div>
+
+
+        <div class="feature-card">
+          <div class="feature-card__icon feature-card__icon--green">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+
+          <h3>Reparto</h3>
+
+          <p>
+            Recibí tu pedido cómodamente en tu casa.
+          </p>
+        </div>
+
+
+        <div class="feature-card">
+          <div class="feature-card__icon feature-card__icon--orange">
+            <i class="fa-solid fa-basket-shopping"></i>
+          </div>
+
+          <h3>Variedad</h3>
+
+          <p>
+            Frutas, verduras y productos seleccionados.
+          </p>
+        </div>
+
+
+        <div class="feature-card">
+          <div class="feature-card__icon feature-card__icon--green">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <h3>Calidad</h3>
+
+          <p>
+            Trabajamos para llevar productos de calidad a tu mesa.
+          </p>
+        </div>
+
+      </div>
+      <div class="features__phrase">
+  Tus esenciales saludables, en la puerta de tu casa.
+</div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTOS ================= -->
+
+    <section class="products" id="productos">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <span class="eyebrow">
+            Nuestro catálogo
+          </span>
+
+          <h2 class="section-title">
+            Elegí tus productos
+          </h2>
+
+          <p class="section-subtitle">
+            Agregá lo que quieras a tu carrito.
+          </p>
+
+        </div>
+
+
+        <div class="products__tabs">
+
+          <button class="tab-btn active" data-category="frutas">
+            🍎 Frutas
+          </button>
+
+          <button class="tab-btn" data-category="verduras">
+            🥕 Verduras
+          </button>
+
+          <button class="tab-btn" data-category="saludables">
+            🍯 Saludables
+          </button>
+
+        </div>
+
+
+        <!-- ================= FRUTAS ================= -->
+
+        <div class="products__grid" id="grid-frutas">
+
+          <article
+            class="product-card"
+            data-name="Manzanas rojas"
+            data-price="1200">
+
+            <div class="product-image">
+              <img src="assets/productos/manzanas.jpg" alt="Manzanas rojas">
+            </div>
+
+            <div class="product-card__content">
+
+              <h3>Manzanas rojas</h3>
+
+              <p>
+                Dulces y crocantes.
+              </p>
+
+              <div class="product-card__bottom">
+
+                <strong class="product-price">
+                  $1.200 <small>/kg</small>
+                </strong>
+
+                <div class="product-controls">
+
+                  <button class="qty-minus">
+                    −
+                  </button>
+
+                  <span class="qty-value">
+                    1
+                  </span>
+
+                  <button class="qty-plus">
+                    +
+                  </button>
+
+                </div>
+
+              </div>
+
+              <button class="btn btn--add">
+                <i class="fa-solid fa-cart-plus"></i>
+                Agregar
+              </button>
+
+            </div>
+
+          </article>
+
+
+          <article
+            class="product-card"
+            data-name="Bananas"
+            data-price="5600">
+
+            <div class="product-image">
+              <img src="assets/productos/bananas.jpg" alt="Bananas">
+            </div>
+
+            <div class="product-card__content">
+
+              <h3>Bananas</h3>
+
+              <p>
+                Dulces y listas para disfrutar.
+              </p>
+
+              <div class="product-card__bottom">
+
+                <strong class="product-price">
+                  $5.600 <small>/kg</small>
+                </strong>
+
+                <div class="product-controls">
+
+                  <button class="qty-minus">−</button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-plus">+</button>
+
+                </div>
+
+              </div>
+
+              <button class="btn btn--add">
+                <i class="fa-solid fa-cart-plus"></i>
+                Agregar
+              </button>
+
+            </div>
+
+          </article>
+
+
+          <article
+            class="product-card"
+            data-name="Naranjas"
+            data-price="1400">
+
+            <div class="product-image">
+             <img src="assets/productos/naranjas.jpg" alt="Naranjas">
+            </div>
+
+            <div class="product-card__content">
+
+              <h3>Naranjas</h3>
+
+              <p>
+                Jugosas y llenas de sabor.
+              </p>
+
+              <div class="product-card__bottom">
+
+                <strong class="product-price">
+                  $1.400 <small>/kg</small>
+                </strong>
+
+                <div class="product-controls">
+
+                  <button class="qty-minus">−</button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-plus">+</button>
+
+                </div>
+
+              </div>
+
+              <button class="btn btn--add">
+                <i class="fa-solid fa-cart-plus"></i>
+                Agregar
+              </button>
+
+            </div>
+
+          </article>
+
+
+          <article
+            class="product-card"
+            data-name="Frutillas"
+            data-price="1500">
+
+            <div class="product-image">
+              <img src="assets/productos/frutillas.jpg" alt="Frutillas">
+            </div>
+
+            <div class="product-card__content">
+
+              <h3>Frutillas</h3>
+
+              <p>
+                Frescas y de estación.
+              </p>
+
+              <div class="product-card__bottom">
+
+                <strong class="product-price">
+                  $1.500 <small>/½ kg</small>
+                </strong>
+
+                <div class="product-controls">
+
+                  <button class="qty-minus">−</button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-plus">+</button>
+
+                </div>
+
+              </div>
+
+              <button class="btn btn--add">
+                <i class="fa-solid fa-cart-plus"></i>
+                Agregar
+              </button>
+
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <!-- ================= VERDURAS ================= -->
+
+        <div class="products__grid hidden-grid" id="grid-verduras">
+
+          <article
+            class="product-card"
+            data-name="Tomates"
+            data-price="1400">
+
+            <div class="product-image">
+              <img src="assets/productos/tomates.jpg" alt="Tomates">
+            </div>
+
+            <div class="product-card__content">
+
+              <h3>Tomates</h3>
+
+              <p>
+                Ideales para ensaladas y salsas.
+              </p>
+
+              <div class="product-card__bottom">
+
+                <strong class="product-price">
+                  $1.400 <small>/kg</small>
+                </strong>
+
+                <div class="product-controls">
+
+                  <button class="qty-minus">−</button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-plus">+</button>
+
+                </div>
+
+              </div>
+
+              <button class="btn btn--add">
+                <i class="fa-solid fa-cart-plus"></i>
+                Agregar
+              </button>
+
+            </div>
+
+          </article>
+
+
+          <article
+            class="product-card"
+            data-name="Zanahorias"
+            data-price="1400">
+
+            <div class="product-image">
+              <img src="assets/productos/zanahorias.jpg" alt="Zanahorias">
+            </div>
+
+            <div class="product-card__content">
+
+              <h3>Zanahorias</h3>
+
+              <p>
+                Frescas y crocantes.
+              </p>
+
+              <div class="product-card__bottom">
+
+                <strong class="product-price">
+                  $1400 <small>/kg</small>
+                </strong>
+
+                <div class="product-controls">
+
+                  <button class="qty-minus">−</button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-plus">+</button>
+
+                </div>
+
+              </div>
+
+              <button class="btn btn--add">
+                <i class="fa-solid fa-cart-plus"></i>
+                Agregar
+              </button>
+
+            </div>
+
+          </article>
+
+
+          <article
+            class="product-card"
+            data-name="Papas"
+            data-price="2600">
+
+            <div class="product-image">
+              <img src="assets/productos/papas.jpg" alt="Papas">
+            </div>
+
+            <div class="product-card__content">
+
+              <h3>Papas</h3>
+
+              <p>
+                Ideales para cualquier comida.
+              </p>
+
+              <div class="product-card__bottom">
+
+                <strong class="product-price">
+                  $2600 <small>/kg</small>
+                </strong>
+
+                <div class="product-controls">
+
+                  <button class="qty-minus">−</button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-plus">+</button>
+
+                </div>
+
+              </div>
+
+              <button class="btn btn--add">
+                <i class="fa-solid fa-cart-plus"></i>
+                Agregar
+              </button>
+
+            </div>
+
+          </article>
+
+
+          <article
+            class="product-card"
+            data-name="Lechuga"
+            data-price="1600">
+
+            <div class="product-image">
+              <img src="assets/productos/lechuga.jpg" alt="Lechuga">
+            </div>
+
+            <div class="product-card__content">
+
+              <h3>Lechuga</h3>
+
+              <p>
+                Fresca y crujiente.
+              </p>
+
+              <div class="product-card__bottom">
+
+                <strong class="product-price">
+                  $1.600 <small>/unidad</small>
+                </strong>
+
+                <div class="product-controls">
+
+                  <button class="qty-minus">−</button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-plus">+</button>
+
+                </div>
+
+              </div>
+
+              <button class="btn btn--add">
+                <i class="fa-solid fa-cart-plus"></i>
+                Agregar
+              </button>
+
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <!-- ================= SALUDABLES ================= -->
+
+        <div class="products__grid hidden-grid" id="grid-saludables">
+
+          <article
+            class="product-card"
+            data-name="Miel pura"
+            data-price="2200">
+
+            <div class="product-image">
+              <img src="assets/productos/miel.jpg" alt="Miel pura">
+            </div>
+
+            <div class="product-card__content">
+
+              <h3>Miel pura</h3>
+
+              <p>
+                Producto natural.
+              </p>
+
+              <div class="product-card__bottom">
+
+                <strong class="product-price">
+                  $2.200
+                </strong>
+
+                <div class="product-controls">
+                  <button class="qty-minus">−</button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-plus">+</button>
+                </div>
+
+              </div>
+
+              <button class="btn btn--add">
+                <i class="fa-solid fa-cart-plus"></i>
+                Agregar
+              </button>
+
+            </div>
+
+          </article>
+
+
+          <article
+            class="product-card"
+            data-name="Frutos secos"
+            data-price="1800">
+
+            <div class="product-image">
+              <img src="assets/productos/frutos-secos.jpg" alt="Frutos secos">
+            </div>
+
+            <div class="product-card__content">
+
+              <h3>Frutos secos</h3>
+
+              <p>
+                Mix de frutos secos.
+              </p>
+
+              <div class="product-card__bottom">
+
+                <strong class="product-price">
+                  $1.800
+                </strong>
+
+                <div class="product-controls">
+                  <button class="qty-minus">−</button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-plus">+</button>
+                </div>
+
+              </div>
+
+              <button class="btn btn--add">
+                <i class="fa-solid fa-cart-plus"></i>
+                Agregar
+              </button>
+
+            </div>
+
+          </article>
+
+
+          <article
+            class="product-card"
+            data-name="Granola artesanal"
+            data-price="1600">
+
+            <div class="product-image">
+              <img src="assets/productos/granola.jpg" alt="Granola artesanal">
+            </div>
+
+            <div class="product-card__content">
+
+              <h3>Granola artesanal</h3>
+
+              <p>
+                Ideal para desayunos y meriendas.
+              </p>
+
+              <div class="product-card__bottom">
+
+                <strong class="product-price">
+                  $1.600
+                </strong>
+
+                <div class="product-controls">
+                  <button class="qty-minus">−</button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-plus">+</button>
+                </div>
+
+              </div>
+
+              <button class="btn btn--add">
+                <i class="fa-solid fa-cart-plus"></i>
+                Agregar
+              </button>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= BOLSONES ================= -->
+
+    <section class="bolsones" id="bolsones">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <span class="eyebrow">
+            Próximamente
+          </span>
+
+          <h2 class="section-title">
+            Nuestros Packs 
+          </h2>
+
+          <p class="section-subtitle">
+            Estamos preparando diferentes opciones para vos.
+          </p>
+
+        </div>
+
+
+        <div class="bolsones__grid">
+
+          <div class="bolson-placeholder">
+            <span>📦</span>
+            <h3>Pack 1</h3>
+            <p>Próximamente</p>
+          </div>
+
+          <div class="bolson-placeholder">
+            <span>🧺</span>
+            <h3>Pack 2</h3>
+            <p>Próximamente</p>
+          </div>
+
+          <div class="bolson-placeholder">
+            <span>🥬</span>
+            <h3>Pack 3</h3>
+            <p>Próximamente</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= REPARTO ================= -->
+
+    <section class="delivery" id="reparto">
+
+      <div class="container delivery__inner">
+
+        <div class="delivery__content">
+
+          <span class="eyebrow eyebrow--light">
+            Reparto a domicilio
+          </span>
+
+          <h2 class="section-title">
+            Lo llevamos hasta tu puerta
+          </h2>
+
+          <p>
+            Armá tu pedido y nosotros nos encargamos de llevarlo
+            hasta tu casa.
+          </p>
+
+          <ul class="delivery__list">
+
+            <li>
+              <i class="fa-solid fa-map-location-dot"></i>
+              <span>
+                <strong>Zonas:</strong>
+                Zona Norte, Centro y alrededores de Córdoba.
+              </span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-calendar-days"></i>
+              <span>
+                <strong>Días:</strong>
+                Martes, jueves y sábados
+              </span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-clock"></i>
+              <span>
+                <strong>Horario:</strong>
+                 17 a 21:30 hs
+              </span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-tag"></i>
+              <span>
+                <strong>Envío gratis</strong>
+                en pedidos desde $25.000
+              </span>
+            </li>
+
+          </ul>
+
+          <a href="#productos" class="btn btn--light">
+            Armar mi pedido
+          </a>
+
+        </div>
+
+
+        <div class="delivery__visual">
+
+          <div class="delivery__circle">
+            <i class="fa-solid fa-truck"></i>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= CONTACTO ================= -->
+
+    <section class="contact" id="contacto">
+
+      <div class="container contact__inner">
+
+        <div>
+
+          <span class="eyebrow">
+            ¿Tenés alguna consulta?
+          </span>
+
+          <h2 class="section-title">
+            Hablemos
+          </h2>
+
+          <p>
+            Si necesitás consultar por productos, precios,
+            zonas de entrega o pedidos especiales, escribinos.
+          </p>
+
+        </div>
+
+        <a
+          href="https://wa.me/5493513851728"
+          target="_blank"
+          class="btn btn--whatsapp">
+
+          <i class="fa-brands fa-whatsapp"></i>
+          Escribir por WhatsApp
+
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="footer">
+
+    <div class="container footer__grid">
+
+      <div class="footer__col">
+
+        <div class="logo logo--footer">
+
+          <div class="logo__mark">
+            🍊
+          </div>
+
+          <span class="logo__text">
+            Frutales
+            <span>del Norte</span>
+          </span>
+
+        </div>
+
+        <p>
+          Frutas, verduras y productos seleccionados,
+          directo a tu casa.
+        </p>
+
+      </div>
+
+
+      <div class="footer__col">
+
+        <h4>Enlaces</h4>
+
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#packs">Packs</a></li>
+          <li><a href="#reparto">Reparto</a></li>
+        </ul>
+
+      </div>
+
+
+      <div class="footer__col">
+
+        <h4>Contacto</h4>
+
+        <ul class="footer__contact">
+
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            Zona Norte y alrededores
+          </li>
+
+          <li>
+            <i class="fa-brands fa-whatsapp"></i>
+            3513851728
+          </li>
+
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            frutalesdelnorte@gmail.com
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer__bottom">
+
+      <p>
+        © <span id="year"></span>
+        Frutales del Norte.
+        Todos los derechos reservados.
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- ================= CARRITO ================= -->
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <aside class="cart-drawer" id="cartDrawer">
+
+    <div class="cart-header">
+
+      <div>
+        <span class="eyebrow">Tu selección</span>
+        <h2>Mi carrito</h2>
+      </div>
+
+      <button id="closeCart" class="close-cart">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+    </div>
+
+
+    <div class="cart-items" id="cartItems">
+
+      <div class="cart-empty">
+
+        <i class="fa-solid fa-basket-shopping"></i>
+
+        <h3>Tu carrito está vacío</h3>
+
+        <p>
+          Agregá algunos productos para comenzar tu pedido.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="cart-footer">
+
+      <div class="cart-total">
+
+        <span>Total estimado</span>
+
+        <strong id="cartTotal">
+          $0
+        </strong>
+
+      </div>
+
+      <button
+        class="btn btn--primary btn--full"
+        id="checkoutButton">
+
+        Realizar pedido
+        <i class="fa-solid fa-arrow-right"></i>
+
+      </button>
+
+    </div>
+
+  </aside>
+
+
+  <!-- ================= MODAL PEDIDO ================= -->
+
+  <div class="order-modal" id="orderModal">
+
+    <div class="order-modal__box">
+
+      <button class="modal-close" id="closeModal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <span class="eyebrow">
+        Último paso
+      </span>
+
+      <h2>
+        Completá tus datos
+      </h2>
+
+      <p class="modal-description">
+        Te vamos a redirigir a WhatsApp con tu pedido ya armado.
+      </p>
+
+
+      <form id="orderForm">
+
+        <div class="form-group">
+
+          <label for="nombre">
+            Nombre y apellido *
+          </label>
+
+          <input
+            type="text"
+            id="nombre"
+            required
+            placeholder="Ej: Juan Pérez">
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="telefono">
+            Teléfono *
+          </label>
+
+          <input
+            type="tel"
+            id="telefono"
+            required
+            placeholder="Ej: 351 1234567">
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="direccion">
+            Dirección *
+          </label>
+
+          <input
+            type="text"
+            id="direccion"
+            required
+            placeholder="Calle, número y barrio">
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="notas">
+            Notas del pedido
+          </label>
+
+          <textarea
+            id="notas"
+            rows="3"
+            placeholder="Alguna indicación especial..."></textarea>
+
+        </div>
+
+
+        <div class="order-summary">
+
+          <h3>
+            <i class="fa-solid fa-receipt"></i>
+            Resumen
+          </h3>
+
+          <div id="orderSummaryItems"></div>
+
+          <div class="order-summary__total">
+
+            <span>Total</span>
+
+            <strong id="orderSummaryTotal">
+              $0
+            </strong>
+
+          </div>
+
+        </div>
+
+
+        <p class="form-error" id="formError"></p>
+
+
+        <button
+          type="submit"
+          class="btn btn--whatsapp btn--full">
+
+          <i class="fa-brands fa-whatsapp"></i>
+          Enviar pedido por WhatsApp
+
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================= WHATSAPP FLOTANTE ================= -->
+
+  <a
+    href="https://wa.me/5493511234567"
+    target="_blank"
+    class="whatsapp-float"
+    aria-label="Contactar por WhatsApp">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+  </a>
+
+
+  <!-- ================= JS ================= -->
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
