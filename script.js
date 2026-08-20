@@ -627,9 +627,13 @@ function setupOrderForm() {
       const direccion =
         document.getElementById("direccion").value.trim();
 
-      const metodoPago =
-        document.getElementById("metodoPago").value;
+      const metodoPagoRadio =
+  document.querySelector(
+    'input[name="metodoPago"]:checked'
+  );
 
+const metodoPago =
+  metodoPagoRadio ? metodoPagoRadio.value : "";
       const notas =
        document.getElementById("notas").value.trim();
 
