@@ -1385,3 +1385,75 @@ ul {
   }
 
 }
+
+/* =========================
+   MÉTODOS DE PAGO
+========================= */
+
+.payment-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.payment-option {
+  position: relative;
+  cursor: pointer;
+}
+
+.payment-option input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.payment-option__content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border: 2px solid #e5e5e5;
+  border-radius: 14px;
+  background: #fff;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.payment-option:hover .payment-option__content {
+  border-color: #F0762A;
+  transform: translateY(-2px);
+}
+
+.payment-option input:checked + .payment-option__content {
+  border-color: #F0762A;
+  background: #FFF5ED;
+  box-shadow: 0 6px 18px rgba(240, 118, 42, 0.15);
+}
+
+.payment-option__icon {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.payment-option__content strong {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+
+.payment-option__content small {
+  display: block;
+  color: #777;
+  font-size: 12px;
+}
+
+@media (max-width: 500px) {
+  .payment-options {
+    grid-template-columns: 1fr;
+  }
+}
