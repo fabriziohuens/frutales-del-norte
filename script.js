@@ -611,152 +611,145 @@ function closeOrderModal() {
 
 function setupOrderForm() {
 
-  orderForm.addEventListener(
-    "submit",
-    event => {
+  orderForm.addEventListener("submit", event => {
 
-      event.preventDefault();
+    event.preventDefault();
 
+    const nombre =
+      document.getElementById("nombre").value.trim();
 
-      const nombre =
-        document.getElementById("nombre").value.trim();
+    const telefono =
+      document.getElementById("telefono").value.trim();
 
-      const telefono =
-        document.getElementById("telefono").value.trim();
+    const direccion =
+      document.getElementById("direccion").value.trim();
 
-      const direccion =
-        document.getElementById("direccion").value.trim();
-
-      const metodoPagoRadio =
-  document.querySelector(
-    'input[name="metodoPago"]:checked'
-  );
-
-const metodoPago =
-  metodoPagoRadio ? metodoPagoRadio.value : "";
-      const notas =
-       document.getElementById("notas").value.trim();
-
-
-      formError.textContent = "";
-
-
-      /* VALIDACIÓN */
-
-      if (!nombre || !telefono || !direccion || !metodoPago) {
-
-        formError.textContent =
-          "Completá todos los campos obligatorios.";
-
-        return;
-
-      }
-
-
-      /* CREAR MENSAJE */
-
-      let message =
-        "🍊 *NUEVO PEDIDO - FRUTALES DEL NORTE*%0A";
-
-      message +=
-        "--------------------------------%0A%0A";
-
-
-      message +=
-        "👤 *Cliente:* " +
-        encodeURIComponent(nombre) +
-        "%0A";
-
-
-      message +=
-        "📱 *Teléfono:* " +
-        encodeURIComponent(telefono) +
-        "%0A";
-
-
-      message +=
-      "📍 *Dirección:* " +
-        encodeURIComponent(direccion) +
-        "%0A";
-
-      message +=
-      "💳 *Método de pago:* " +
-        encodeURIComponent(metodoPago) +
-       "%0A%0A";
-
-
-      message +=
-        "🛒 *PRODUCTOS:*%0A";
-
-
-      cart.forEach(item => {
-
-        const subtotal =
-          item.price * item.quantity;
-
-
-        message +=
-          "• " +
-          encodeURIComponent(item.name) +
-          " x" +
-          item.quantity +
-          " — " +
-          encodeURIComponent(
-            formatPrice(subtotal)
-          ) +
-          "%0A";
-
-      });
-
-
-      message +=
-        "%0A💰 *TOTAL ESTIMADO:* " +
-        encodeURIComponent(
-          formatPrice(calculateTotal())
-        );
-
-
-      if (notas) {
-
-        message +=
-          "%0A%0A📝 *NOTAS:*%0A" +
-          encodeURIComponent(notas);
-
-      }
-
-
-      message +=
-        "%0A%0A¡Gracias! 🍊";
-
-
-      /* ABRIR WHATSAPP */
-
-      const whatsappURL =
-        `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
-
-
-      window.open(
-        whatsappURL,
-        "_blank"
+    const metodoPagoRadio =
+      document.querySelector(
+        'input[name="metodoPago"]:checked'
       );
 
+    const metodoPago =
+      metodoPagoRadio
+        ? metodoPagoRadio.value
+        : "";
 
-      /* LIMPIAR */
+    const notas =
+      document.getElementById("notas").value.trim();
 
-      cart = [];
 
-      saveCart();
+    formError.textContent = "";
 
-      updateCart();
 
-      orderForm.reset();
+    /* VALIDACIÓN */
 
-      closeOrderModal();
+    if (
+      !nombre ||
+      !telefono ||
+      !direccion ||
+      !metodoPago
+    ) {
 
-      closeCart();
+      formError.textContent =
+        "Completá todos los campos obligatorios.";
+
+      return;
 
     }
-  );
+
+
+    /* CREAR MENSAJE */
+
+    let message =
+      "🍊 *NUEVO PEDIDO - FRUTALES DEL NORTE*\n";
+
+    message +=
+      "--------------------------------\n\n";
+
+    message +=
+      "👤 *Cliente:* " +
+      nombre +
+      "\n";
+
+    message +=
+      "📱 *Teléfono:* " +
+      telefono +
+      "\n";
+
+    message +=
+      "📍 *Dirección:* " +
+      direccion +
+      "\n";
+
+    message +=
+      "💳 *Método de pago:* " +
+      metodoPago +
+      "\n\n";
+
+
+    message +=
+      "🛒 *PRODUCTOS:*\n";
+
+
+    cart.forEach(item => {
+
+      const subtotal =
+        item.price * item.quantity;
+
+      message +=
+        "• " +
+        item.name +
+        " x" +
+        item.quantity +
+        " — " +
+        formatPrice(subtotal) +
+        "\n";
+
+    });
+
+
+    message +=
+      "\n💰 *TOTAL ESTIMADO:* " +
+      formatPrice(calculateTotal());
+
+
+    if (notas) {
+
+      message +=
+        "\n\n📝 *NOTAS:*\n" +
+        notas;
+
+    }
+
+
+    message +=
+      "\n\n¡Gracias! 🍊";
+
+
+    /* ABRIR WHATSAPP */
+
+    const whatsappURL =
+      `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+
+
+    window.location.href = whatsappURL;
+
+
+    /* LIMPIAR */
+
+    cart = [];
+
+    saveCart();
+
+    updateCart();
+
+    orderForm.reset();
+
+    closeOrderModal();
+
+    closeCart();
+
+  });
 
 }
 
