@@ -627,8 +627,11 @@ function setupOrderForm() {
       const direccion =
         document.getElementById("direccion").value.trim();
 
+      const metodoPago =
+        document.getElementById("metodoPago").value;
+
       const notas =
-        document.getElementById("notas").value.trim();
+       document.getElementById("notas").value.trim();
 
 
       formError.textContent = "";
@@ -636,7 +639,7 @@ function setupOrderForm() {
 
       /* VALIDACIÓN */
 
-      if (!nombre || !telefono || !direccion) {
+      if (!nombre || !telefono || !direccion || !metodoPago) {
 
         formError.textContent =
           "Completá todos los campos obligatorios.";
@@ -668,9 +671,14 @@ function setupOrderForm() {
 
 
       message +=
-        "📍 *Dirección:* " +
+      "📍 *Dirección:* " +
         encodeURIComponent(direccion) +
-        "%0A%0A";
+        "%0A";
+
+      message +=
+      "💳 *Método de pago:* " +
+        encodeURIComponent(metodoPago) +
+       "%0A%0A";
 
 
       message +=
